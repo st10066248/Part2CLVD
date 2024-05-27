@@ -1,0 +1,59 @@
+﻿@model List<Product>
+@{
+}
+
+<h2 class="text-center mb-4">My Products</h2>
+
+<div class=" = row mb-5">
+	<div class="col">
+		<a class="btn btn-primary" asp-controller="Products" asp-action="Create">New Product</a>
+
+	</div>
+	<div class="col">
+
+	</div>
+
+
+</div>
+
+
+<table class="table">
+	<thead>
+    <tr>
+       
+			<td>ID</td>
+			<td>Name</td>
+			<td>Description</td>
+			<td>Category</td>
+			<td>Price</td>
+			<td>Availibility</td>
+    </tr>
+
+	</thead>
+	<tbody>
+		@foreach (var product in Model)
+		{
+		
+		<tr>
+			
+				<td>@product.Id</td>
+				<td>@product.Name</td>
+				<td>@product.Description</td>
+				<td>@product.Category</td>
+				<td>R@(product.Price)</td>
+				<td>@product.Availibility</td>
+				<td style=" white-space: nowrap">
+					<a class="btn btn-primary btn-sm" asp-controller="Products" asp-action="Edit"
+                        asp-route-id="@product.Id">Edit</a>
+					<a class="btn btn-danger btn-sm" asp-controller="Products" asp-action="Delete"
+                        asp-route-id="@product.Id">Delete</a>
+					<a class="btn btn-outline-primary btn-sm" asp-controller="Products" asp-action="Purchase"
+					   asp-route-id="@product.Id">Purchase</a>
+
+				</td>
+				
+		</tr>
+		}
+	</tbody>
+	
+</table>

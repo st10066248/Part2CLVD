@@ -1,0 +1,122 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khumalo Craft</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Khumalo Craft</h1>
+            
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="hero">
+                <div class="hero-text">
+                    <h2>Welcome to Khumalo Craft</h2>
+                    <p>Discover exquisite handmade crafts that bring beauty and culture into your home.</p>
+                </div>
+                <div class="hero-image">
+                    <img src="images\Picture1.png" alt="Craft Image">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Khumalo Craft. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
+<style>
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1em 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    background-color: white;
+    padding: 2em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h2 {
+    color: #007bff;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    margin-bottom: 1em;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+</style>
